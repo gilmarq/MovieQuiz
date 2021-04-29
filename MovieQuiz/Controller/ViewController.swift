@@ -15,15 +15,28 @@ class ViewController: UIViewController {
     @IBOutlet var btOptions: [UIButton]!
     @IBOutlet weak var slMusic: UISlider!
     @IBOutlet weak var ivQuiz: UIImageView!
+    @IBOutlet weak var ivTime: UIView!
+
+
+    
+    //MARK: - variable
+    var quizManagr: QuizManager!
 
     //MARK: - life cyclo
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        quizManagr = QuizManager()
+        getNewQuiz()
     }
 
    //MARK: - action
     @IBAction func showHideSoundBar(_ sender: Any) {
+        ivSoundBar.isHidden = !ivSoundBar.isHidden
     }
 
     @IBAction func changeMusicStatus(_ sender: UIButton) {
@@ -33,6 +46,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
+        quizManagr.checkAnswer(sender.title(for: .normal)!)
+        getNewQuiz()
+    }
+
+    //MARK: - methods
+    func getNewQuiz() {
+        let round =  quizManagr.genereteRandonQuiz()
+        for i in 0..<round.options.count {
+            btOptions[i].setTitle(round.options[i].name, for: .normal)
+
+        }
     }
 }
 

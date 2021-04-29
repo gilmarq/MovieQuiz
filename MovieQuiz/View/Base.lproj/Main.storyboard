@@ -20,32 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-zP-fck">
-                                <rect key="frame" x="0.0" y="438" width="320" height="42"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQX-Wg-9O9">
-                                        <rect key="frame" x="10" y="9" width="23" height="23"/>
-                                        <state key="normal" image="pause"/>
-                                        <connections>
-                                            <action selector="changeMusicStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eda-EU-VRi"/>
-                                        </connections>
-                                    </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hoE-Bh-4vh">
-                                        <rect key="frame" x="39" y="6" width="233" height="31"/>
-                                        <connections>
-                                            <action selector="changeMusicTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="col-c4-Ibr"/>
-                                        </connections>
-                                    </slider>
-                                </subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLO-CD-lcZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="hoE-Bh-4vh" firstAttribute="leading" secondItem="eQX-Wg-9O9" secondAttribute="trailing" constant="8" id="QZY-EK-h4I"/>
-                                    <constraint firstAttribute="bottom" secondItem="eQX-Wg-9O9" secondAttribute="bottom" constant="10" id="UbW-Aj-2U9"/>
-                                    <constraint firstAttribute="trailing" secondItem="hoE-Bh-4vh" secondAttribute="trailing" constant="50" id="XdJ-ut-rw7"/>
-                                    <constraint firstItem="eQX-Wg-9O9" firstAttribute="leading" secondItem="jB0-zP-fck" secondAttribute="leading" constant="10" id="gcI-Q9-69V"/>
-                                    <constraint firstAttribute="height" constant="42" id="mTZ-PO-vhP"/>
-                                    <constraint firstItem="hoE-Bh-4vh" firstAttribute="centerY" secondItem="jB0-zP-fck" secondAttribute="centerY" id="par-au-gPK"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yre-k6-Xli">
                                 <rect key="frame" x="287" y="447" width="23" height="23"/>
@@ -127,6 +105,33 @@
                                     <constraint firstAttribute="bottom" secondItem="1O2-r6-0hu" secondAttribute="bottom" constant="10" id="zQO-bI-btG"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-zP-fck">
+                                <rect key="frame" x="0.0" y="438" width="320" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQX-Wg-9O9">
+                                        <rect key="frame" x="10" y="9" width="23" height="23"/>
+                                        <state key="normal" image="pause"/>
+                                        <connections>
+                                            <action selector="changeMusicStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eda-EU-VRi"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hoE-Bh-4vh">
+                                        <rect key="frame" x="39" y="6" width="233" height="31"/>
+                                        <connections>
+                                            <action selector="changeMusicTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="col-c4-Ibr"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="hoE-Bh-4vh" firstAttribute="leading" secondItem="eQX-Wg-9O9" secondAttribute="trailing" constant="8" id="QZY-EK-h4I"/>
+                                    <constraint firstAttribute="bottom" secondItem="eQX-Wg-9O9" secondAttribute="bottom" constant="10" id="UbW-Aj-2U9"/>
+                                    <constraint firstAttribute="trailing" secondItem="hoE-Bh-4vh" secondAttribute="trailing" constant="50" id="XdJ-ut-rw7"/>
+                                    <constraint firstItem="eQX-Wg-9O9" firstAttribute="leading" secondItem="jB0-zP-fck" secondAttribute="leading" constant="10" id="gcI-Q9-69V"/>
+                                    <constraint firstAttribute="height" constant="42" id="mTZ-PO-vhP"/>
+                                    <constraint firstItem="hoE-Bh-4vh" firstAttribute="centerY" secondItem="jB0-zP-fck" secondAttribute="centerY" id="par-au-gPK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -162,6 +167,7 @@
                     <connections>
                         <outlet property="ivQuiz" destination="1O2-r6-0hu" id="Eoh-mr-vWl"/>
                         <outlet property="ivSoundBar" destination="jB0-zP-fck" id="wPk-fD-zC1"/>
+                        <outlet property="ivTime" destination="TLO-CD-lcZ" id="Zrl-ZG-uag"/>
                         <outlet property="slMusic" destination="hoE-Bh-4vh" id="2km-l0-aGQ"/>
                         <outletCollection property="btOptions" destination="pCB-E9-iNN" collectionClass="NSMutableArray" id="8NY-VX-OFP"/>
                         <outletCollection property="btOptions" destination="rov-Gg-I12" collectionClass="NSMutableArray" id="gP7-gE-gfY"/>
