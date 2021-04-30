@@ -25,13 +25,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yre-k6-Xli">
-                                <rect key="frame" x="287" y="447" width="23" height="23"/>
-                                <state key="normal" image="music"/>
-                                <connections>
-                                    <action selector="showHideSoundBar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWc-lC-75g"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AJ-RO-yWl">
                                 <rect key="frame" x="0.0" y="400" width="320" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +81,6 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHb-R9-oHc">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
-                                        <state key="normal" title="play musica"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,6 +124,14 @@
                                     <constraint firstItem="hoE-Bh-4vh" firstAttribute="centerY" secondItem="jB0-zP-fck" secondAttribute="centerY" id="par-au-gPK"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yre-k6-Xli">
+                                <rect key="frame" x="287" y="447" width="23" height="23"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="music"/>
+                                <connections>
+                                    <action selector="showHideSoundBar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWc-lC-75g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -143,12 +143,13 @@
                             <constraint firstItem="h4o-Iw-W8x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A2Z-DO-mcK"/>
                             <constraint firstAttribute="bottom" secondItem="jB0-zP-fck" secondAttribute="bottom" id="AQA-ya-BAd"/>
                             <constraint firstItem="5AJ-RO-yWl" firstAttribute="top" secondItem="8qO-ET-fy8" secondAttribute="bottom" constant="8" id="F4q-az-SYq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yre-k6-Xli" secondAttribute="bottom" constant="10" id="J4F-Lg-llE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yre-k6-Xli" secondAttribute="bottom" constant="10" id="M00-J1-9oU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5AJ-RO-yWl" secondAttribute="bottom" constant="50" id="MXe-av-3t3"/>
                             <constraint firstItem="bCW-ZN-nsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NZa-FU-eMZ"/>
                             <constraint firstItem="5AJ-RO-yWl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pny-Im-deB"/>
                             <constraint firstItem="pCB-E9-iNN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RkD-61-SNY"/>
                             <constraint firstItem="bCW-ZN-nsI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y7r-9x-GFU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yre-k6-Xli" secondAttribute="trailing" constant="10" id="YbB-kw-4jy"/>
                             <constraint firstAttribute="bottom" secondItem="bCW-ZN-nsI" secondAttribute="bottom" id="b19-em-bTm"/>
                             <constraint firstItem="8qO-ET-fy8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dbs-ZC-cwI"/>
                             <constraint firstItem="h4o-Iw-W8x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dyI-Ld-qM2"/>
@@ -157,7 +158,6 @@
                             <constraint firstItem="8qO-ET-fy8" firstAttribute="top" secondItem="rov-Gg-I12" secondAttribute="bottom" constant="8" id="jm0-eb-7Du"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8qO-ET-fy8" secondAttribute="trailing" id="k4J-Eb-rif"/>
                             <constraint firstItem="rov-Gg-I12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pgc-DE-9zd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yre-k6-Xli" secondAttribute="trailing" constant="10" id="rul-CQ-7Au"/>
                             <constraint firstAttribute="trailing" secondItem="jB0-zP-fck" secondAttribute="trailing" id="sZ1-2j-JKI"/>
                             <constraint firstItem="jB0-zP-fck" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ttI-Rb-eXf"/>
                         </constraints>
@@ -173,7 +173,7 @@
                         <outletCollection property="btOptions" destination="rov-Gg-I12" collectionClass="NSMutableArray" id="gP7-gE-gfY"/>
                         <outletCollection property="btOptions" destination="8qO-ET-fy8" collectionClass="NSMutableArray" id="pty-mJ-Afe"/>
                         <outletCollection property="btOptions" destination="5AJ-RO-yWl" collectionClass="NSMutableArray" id="KWb-GV-SUx"/>
-                        <segue destination="5O7-9D-Bda" kind="show" id="cXO-36-zbT"/>
+                        <segue destination="5O7-9D-Bda" kind="show" identifier="gameOverSegue" id="cXO-36-zbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
