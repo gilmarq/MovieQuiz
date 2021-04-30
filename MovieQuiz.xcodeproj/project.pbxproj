@@ -37,6 +37,7 @@
 		7CA379B02638B63600B68C3E /* quote12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3799A2638B63600B68C3E /* quote12.mp3 */; };
 		7CA379B12638B63600B68C3E /* quote13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3799B2638B63600B68C3E /* quote13.mp3 */; };
 		7CA379B326390DAB00B68C3E /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA379B226390DAB00B68C3E /* GameOverViewController.swift */; };
+		7CA379B52639ADBC00B68C3E /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA379B42639ADBC00B68C3E /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		7CA3799A2638B63600B68C3E /* quote12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote12.mp3; sourceTree = "<group>"; };
 		7CA3799B2638B63600B68C3E /* quote13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote13.mp3; sourceTree = "<group>"; };
 		7CA379B226390DAB00B68C3E /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		7CA379B42639ADBC00B68C3E /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				7CA3796B26388A8300B68C3E /* ViewController.swift */,
 				7CA379B226390DAB00B68C3E /* GameOverViewController.swift */,
+				7CA379B42639ADBC00B68C3E /* QuizManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				7CA379B326390DAB00B68C3E /* GameOverViewController.swift in Sources */,
 				7CA3796C26388A8300B68C3E /* ViewController.swift in Sources */,
+				7CA379B52639ADBC00B68C3E /* QuizManager.swift in Sources */,
 				7CA3796826388A8300B68C3E /* AppDelegate.swift in Sources */,
 				7CA3797226388A8300B68C3E /* MovieQuiz.xcdatamodeld in Sources */,
 			);

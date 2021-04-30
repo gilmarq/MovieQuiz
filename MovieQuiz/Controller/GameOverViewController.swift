@@ -10,12 +10,15 @@ import UIKit
 
 class GameOverViewController: UIViewController {
 
+    //MARK: - variable
+    var score: Int = 0 
     //MARK: - outlet
     @IBOutlet weak var lbScore: UILabel!
 
      //MARK: - life cyclo
     override func viewDidLoad() {
         super.viewDidLoad()
+        lbScore.text = "\(score)"
 
     }
 
